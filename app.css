@@ -12,25 +12,24 @@ ul {
   padding-left: 0;
   list-style: none;
 }
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+
+}
 .fa {
   color: black;
 }
 
 .navbar {
   display: flex;
-  flex-direction: row;
+
   justify-content: space-between;
 }
 
 .navbar__L {
-  width: 18%;
-  margin: auto;
-  display: flex;
-}
-
-.navbar__R {
-  width: 8%;
-  margin: auto;
+  margin: 0;
 }
 
 .navlink{
@@ -39,22 +38,28 @@ ul {
 }
 
 .Cage {
-  margin: 1rem;
+  margin-right: 1rem;
 }
 
 .Hero {
+  padding: 1rem;
   background-image: url(./surf-image.jpg);
   background-size: cover;
-  height: 30rem;
+  min-height: 30rem;
 }
 
-.title p {
+.title {
+  margin: 1rem 0;
+}
+
+.hero__big-text {
   text-align: center;
   color: white;
   font-size: 8rem;
+  margin: 0;
 }
 
-.subtitle p {
+.hero__little-text {
   text-align: center;
   color: black;
   font-size: 1rem;
