@@ -64,3 +64,75 @@ ul {
   color: black;
   font-size: 1rem;
 }
+
+
+$gutter: 1rem;
+$content-width: 60rem;
+$col-min-width: 10rem;
+
+body {
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__nav {
+    padding: $gutter;
+    background: #25bfda;
+  }
+
+  &__main {
+    flex-grow: 1;
+    padding: $gutter;
+    background: #eee;
+  }
+
+  &__footer {
+    padding: $gutter;
+    background: #222;
+    color: #eee;
+  }
+}
+
+.container {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+.top-nav-title {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -$gutter;
+
+  &__col {
+    margin: $gutter;
+    min-width: $col-min-width;
+    flex-grow: 1;
+
+    &--1-4 {
+      width: calc(100% / 4 - #{$gutter} - #{$gutter});
+    }
+
+    &--1-2 {
+      width: calc(100% / 2 - #{$gutter} - #{$gutter});
+    }
+  }
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+
+  &__byline {
+    a {
+      color: inherit;
+    }
+  }
+}
