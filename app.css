@@ -13,13 +13,34 @@ ul {
   list-style: none;
 }
 
+main {
+  padding: 2rem 1rem 6rem;
+}
+
 .container {
   max-width: 65rem;
   margin: 0 auto;
-
 }
-.fa {
-  color: black;
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem;
+}
+
+.grid__item {
+  margin: 1rem;
+  flex-grow: 1;
+}
+
+.grid__item--content {
+  flex-basis: calc(75% - 2rem);
+  min-width: 10rem;
+}
+
+.grid__item--profile {
+  flex-basis: calc(25% - 2rem);
+  min-width: 10rem;
 }
 
 .navbar {
@@ -30,6 +51,8 @@ ul {
 
 .navbar__L {
   margin: 0;
+  padding: 0;
+  font-size: 15px;
 }
 
 .navlink{
@@ -43,7 +66,7 @@ ul {
 
 .Hero {
   padding: 1rem;
-  background-image: url(./surf-image.jpg);
+  background-image: url(./images/surf-image.jpg);
   background-size: cover;
   min-height: 30rem;
 }
@@ -55,7 +78,7 @@ ul {
 .hero__big-text {
   text-align: center;
   color: white;
-  font-size: 8rem;
+  font-size: 5rem;
   margin: 0;
 }
 
@@ -65,11 +88,6 @@ ul {
   font-size: 1rem;
 }
 
-
-$gutter: 1rem;
-$content-width: 60rem;
-$col-min-width: 10rem;
-
 body {
   margin: 0;
 }
@@ -78,32 +96,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
-  &__nav {
-    padding: $gutter;
-    background: #25bfda;
-  }
-
-  &__main {
-    flex-grow: 1;
-    padding: $gutter;
-    background: #eee;
-  }
-
-  &__footer {
-    padding: $gutter;
-    background: #222;
-    color: #eee;
-  }
-}
-
-.container {
-  max-width: $content-width;
-  margin: 0 auto;
 }
 
 .top-nav-title {
-  margin: 0;
+  margin: 2rem;
 }
 
 .row {
@@ -126,7 +122,7 @@ body {
   }
 }
 
-.footer-content {
+.footer {
   display: flex;
   justify-content: space-between;
 
