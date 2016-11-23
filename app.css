@@ -17,6 +17,14 @@ main {
   padding: 2rem 1rem 6rem;
 }
 
+img {
+  max-width: 100%;
+}
+
+blockquote {
+  font-size: 2rem;
+}
+
 .container {
   max-width: 65rem;
   margin: 0 auto;
@@ -31,6 +39,7 @@ main {
 .grid__item {
   margin: 1rem;
   flex-grow: 1;
+
 }
 
 .grid__item--content {
@@ -92,7 +101,10 @@ main {
   margin: 45px;
 }
 
-
+.social_link {
+  text-decoration: none;
+  color: gray;
+}
 
 .app {
   display: flex;
@@ -108,6 +120,19 @@ aside {
 
 }
 
+.title {
+  font-size: 4rem;
+}
+
+span {
+  text-decoration: underline;
+}
+
+.ad_picture {
+  display: block;
+  margin: auto;
+}
+
 .top-nav-title {
   margin: 2rem;
 }
@@ -121,6 +146,7 @@ aside {
   border-radius: 50%;
   height: 1.2em;
   vertical-align: middle;
+  color: blue;
 }
 
 .subtitle__username {
@@ -128,8 +154,8 @@ aside {
   font-weight: bold;
 }
 
-.foot__tooter {
-
+.footer__tooter {
+  font-size: 3rem;
 }
 
 .footer-images{
@@ -205,8 +231,33 @@ aside {
   color: #fff;
 }
 
+.has-text-centered {
+  text-align: center;
+}
+
 nav {
   text-decoration: none;
   color: #fff;
   margin: 2.2rem;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.button {
+  background: #aaa;
+  border: 0;
+  padding: 0.5rem;
+  font: inherit;
+
+}
+
+.button .fa {
+  margin: -0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  background: #888;
 }
