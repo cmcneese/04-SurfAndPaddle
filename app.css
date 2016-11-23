@@ -2,6 +2,8 @@
 
 body {
   margin: 0;
+  font-family: sans-serif;
+
 }
 
 * {
@@ -64,28 +66,33 @@ main {
   margin-right: 1rem;
 }
 
-.Hero {
+.hero {
   padding: 1rem;
   background-image: url(./images/surf-image.jpg);
   background-size: cover;
   min-height: 30rem;
+
+
 }
 
-.title {
+.hero__title {
   margin: 1rem 0;
+  padding: 8rem 0;
 }
 
 .hero__big-text {
   text-align: center;
   color: white;
   font-size: 5rem;
-  margin: 0;
+  font-weight: normal;
 }
+
 
 .hero__little-text {
   text-align: center;
   color: black;
   font-size: 1rem;
+  margin: 45px;
 }
 
 body {
@@ -102,25 +109,22 @@ body {
   margin: 2rem;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -$gutter;
-
-  &__col {
-    margin: $gutter;
-    min-width: $col-min-width;
-    flex-grow: 1;
-
-    &--1-4 {
-      width: calc(100% / 4 - #{$gutter} - #{$gutter});
-    }
-
-    &--1-2 {
-      width: calc(100% / 2 - #{$gutter} - #{$gutter});
-    }
-  }
+.subtitle {
+  font-size: 1rem;
+  font-weight: normal;
 }
+
+.subtitle__picture {
+  border-radius: 50%;
+  height: 1.2em;
+  vertical-align: middle;
+}
+
+.subtitle__username {
+  color: blue;
+  font-weight: bold;
+}
+
 
 .footer {
   display: flex;
